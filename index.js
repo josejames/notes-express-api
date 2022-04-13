@@ -20,7 +20,7 @@ app.get('/notes', (request, response) => {
         .catch( err => {
             console.error(err)
         })
-    //response.json(notes)
+    //response.json(notes)-
 })
 
 app.put('/notes/:id', (request, response, next) => {
