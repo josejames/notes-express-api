@@ -102,7 +102,7 @@ app.delete('/notes/:id', (request, response, next) => {
 app.use(notFound)
 app.use(handleError)
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
     console.log(`Server running on Port ${PORT}`)
 })
